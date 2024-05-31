@@ -1,0 +1,135 @@
+site_name: OI Notes
+site_url: https://tsljgj.github.io/OI-note
+repo_url: https://github.com/tsljgj/OI-note
+repo_name: tsljgj/OI-note
+edit_uri: edit/main/docs/
+
+# Contents
+nav:
+  - About: about/index.md
+  - Dynamic Programming:
+    - Basic DP: dp/basic.md
+    - Backpack DP: dp/backpack.md
+  - Graph Theory:
+    - Matchings in Graphs: graph/matchings.md
+
+plugins:
+  - glightbox
+  - search
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.top
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    # - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+  icon:
+    repo: fontawesome/brands/git-alt
+    annotation: material/plus-circle-outline
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle: 
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/house
+      link: https://tsljgj.github.io
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/tsljgj
+    - icon: fontawesome/brands/linkedin
+      link: www.linkedin.com/in/zhihaoy
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<zhihaoyu@andrew.cmu.edu>
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/shortcuts.js
+
+extra_css:
+  - stylesheets/extra.css
+
+# Extensions
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+copyright: Copyright &copy; 2024 Tsljgj
