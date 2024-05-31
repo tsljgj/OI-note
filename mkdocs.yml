@@ -6,7 +6,7 @@ edit_uri: edit/main/docs/
 
 # Contents
 nav: 
-  - About: about/index.md
+  - About: index.md
   - Dynamic Programming:
     - Basic DP: dp/basic.md
     - Backpack DP: dp/backpack.md
