@@ -5,7 +5,7 @@ repo_name: tsljgj/OI-note
 edit_uri: edit/main/docs/
 
 # Contents
-nav:
+nav: 
   - About: about/index.md
   - Dynamic Programming:
     - Basic DP: dp/basic.md
