@@ -20,7 +20,7 @@ theme:
   font: 
     text: Times New Roman
   name: material
-  custom_dir: overrides
+  # custom_dir: overrides
   features:
     - navigation.tabs
     # - navigation.tabs.sticky
