@@ -8,8 +8,7 @@ edit_uri: edit/main/docs/
 nav: 
   - About: index.md
   - Dynamic Programming:
-    - Basic DP: dp/basic.md
-    - Backpack DP: dp/backpack.md
+    - Basic: dp/basic.md
   - Graph Theory:
     - Matchings in Graphs: graph/matchings.md
 
@@ -18,7 +17,10 @@ plugins:
   - search
 
 theme:
+  font: 
+    text: Times New Roman
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     # - navigation.tabs.sticky
@@ -26,21 +28,25 @@ theme:
     - navigation.top
     - navigation.instant.prefetch
     - navigation.instant.progress
-    # - toc.follow
-    - toc.integrate
+    - toc.follow
+    # - toc.integrate
     - search.suggest
     - search.highlight
     - search.share
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - content.action.edit
-    - content.action.view
   icon:
     repo: fontawesome/brands/git-alt
     annotation: material/plus-circle-outline
     admonition:
-      note: fontawesome/solid/note-sticky
+      def: fontawesome/solid/pen-to-square
+      note: fontawesome/solid/circle-info
+      eg: fontawesome/solid/lightbulb
+      ex: fontawesome/solid/dumbbell
+      thm: fontawesome/solid/cube
+      sol: fontawesome/solid/check
+      imnote: fontawesome/solid/triangle-exclamation
       abstract: fontawesome/solid/book
       info: fontawesome/solid/circle-info
       tip: fontawesome/solid/bullhorn
@@ -55,17 +61,8 @@ theme:
   language: en
   palette:
     - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: teal
-      accent: purple
-    - scheme: slate
-      toggle: 
-        icon: material/toggle-switch
-        name: Switch to light mode
-      primary: teal
-      accent: lime
+      primary: custom
+      accent: custom
 
 extra:
   generator: false
