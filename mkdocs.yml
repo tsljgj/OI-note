@@ -20,7 +20,7 @@ theme:
   font: 
     text: Times New Roman
   name: material
-  # custom_dir: overrides
+  # custom_dir: overrides 
   features:
     - navigation.tabs
     # - navigation.tabs.sticky
@@ -37,6 +37,7 @@ theme:
     - content.code.annotation
     - content.code.copy
   icon:
+    logo: fontawesome/solid/dice-d20
     repo: fontawesome/brands/git-alt
     annotation: material/plus-circle-outline
     admonition:
